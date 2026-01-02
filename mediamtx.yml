@@ -762,7 +762,7 @@ paths:
     
     # 2. Push to Facebook using FFmpeg
     # This command triggers as soon as the source is available
-    runOnInit: ffmpeg -i rtmp://localhost:$RTSP_PORT/$GOPID -c copy -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122175673814532724-0-Ab0GQkCW6Nv0-0Qib4REPrq8"
+    runOnInit: ffmpeg -i rtmp://localhost:1935/$GOPID -c copy -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122175673814532724-0-Ab0GQkCW6Nv0-0Qib4REPrq8"
 
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
