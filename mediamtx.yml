@@ -756,13 +756,7 @@ pathDefaults:
 # for example "~^(test1|test2)$" will match both "test1" and "test2",
 # for example "~^prefix" will match all paths that start with "prefix".
 paths:
-  restream_fb:
-    # 1. Pull the source from Johor Studio
-    source: rtmp://johorstudio.ddns.net:1935/live
-    
-    # 2. Push to Facebook using FFmpeg
-    # This command triggers as soon as the source is available
-    runOnInit: ffmpeg -i rtmp://localhost:1935/$GOPID -c copy -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122175673814532724-0-Ab0GQkCW6Nv0-0Qib4REPrq8"
+ 
 
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
